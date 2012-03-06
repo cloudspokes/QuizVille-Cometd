@@ -2,10 +2,10 @@ exports.PORT = parseInt(process.env.PORT) || 4567;
 exports.DEBUG = true; 
 
 //Salesforce  
-exports.LOGIN_SERVER = 'https://login.salesforce.com'; 
-exports.CLIENT_ID = '3MVG9rFJvQRVOvk4cxTJa7DLkKTD8NuAg5AexmhUWE.Yv.W4.WgDugtPKYczI602iJPhbd6PI0w91GlaOSl_l';
-exports.CLIENT_SECRET = '4614924466188346354';
+exports.LOGIN_SERVER = ENV['SFDC_INSTANCE_URL']; 
+exports.CLIENT_ID =   ENV['DATABASEDOTCOM_CLIENT_ID'];
+exports.CLIENT_SECRET = ENV['DATABASEDOTCOM_CLIENT_SECRET'];
 
-exports.USERNAME = 'soe@soe.im.streamingapi';
-exports.PASSWORD = 'FORCE2012##ym0Zo4dzSptflOHQVNA164HCs'
+exports.USERNAME = ENV['SFDC_USERNAME'];
+exports.PASSWORD = ENV['SFDC_PASSWORD'];
 exports.PUSH_TOPIC = '/topic/Quiz_Answers';
