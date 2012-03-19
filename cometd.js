@@ -15,7 +15,7 @@ var fayeServer = new faye.NodeAdapter({mount: '/cometd', timeout: 60 });
 // Handle non-Bayeux requests
 var server = http.createServer(function(request, response) {
   response.writeHead(200, {'Content-Type': 'text/plain'});
-  response.write('Welcome to QuizVille Cometd server. It is mounted at /cometd.');
+  response.write('QuickQuiz');
   response.end();
 });
 
